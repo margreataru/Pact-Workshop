@@ -1,7 +1,7 @@
 const pact = require("@pact-foundation/pact-node");
 const path = require("path");
 
-let pactBrokerUrl = "http://localhost:8000";
+let pactBrokerUrl = "http://18.216.78.77:8000";
 let pactBrokerUsername = process.env.PACT_BROKER_USERNAME || "pact_workshop";
 let pactBrokerPassword = process.env.PACT_BROKER_PASSWORD || "pact_workshop";
 
