@@ -29,8 +29,8 @@ describe("Pact Verification", () => {
     let opts = {
       logLevel: "INFO",
       provider: "FilmsProvider",
-      providerBaseUrl: "http://localhost:3000",
-      pactBrokerUrl: process.env.PACT_BROKER_URL || "http://localhost:8000",
+      providerBaseUrl: "http://13.58.151.134:3000",
+      pactBrokerUrl: process.env.PACT_BROKER_URL || "http://13.58.151.134:8000/",
       pactBrokerUsername: process.env.PACT_BROKER_USERNAME || "pact_workshop",
       pactBrokerPassword: process.env.PACT_BROKER_PASSWORD || "pact_workshop",
       providerVersion: "1.0.0",
