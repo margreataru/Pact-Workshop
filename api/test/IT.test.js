@@ -1,6 +1,6 @@
 'use strict';
 var expect = require('chai').expect;
-var server = require('supertest').agent('http://localhost:3000');
+var server = require('supertest').agent('http://13.58.151.134:8000');
 
 
 const Film = require('../models/filmModel');
