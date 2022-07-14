@@ -6,7 +6,7 @@ var path = require("path");
 
 var express = require("express"),
   app = express(),
-  port = process.env.PORT || 3000,
+  port = process.env.PORT || 8000,
   Film = require("../models/filmModel"),
   bodyParser = require("body-parser");
 
@@ -34,8 +34,8 @@ describe("Pruebas integración cliente", () => {
       consumerVersionSelectors: [
         { consumer: "Insert Films Client", latest: true },
       ],
-      providerBaseUrl: "http://localhost:3000",
-      pactBrokerUrl: process.env.PACT_BROKER_URL || "http://localhost:8000",
+      providerBaseUrl: "http://13.58.151.134:8000",
+      pactBrokerUrl: process.env.PACT_BROKER_URL || "http://13.58.151.134:8000",
       pactBrokerUsername: process.env.PACT_BROKER_USERNAME || "pact_workshop",
       pactBrokerPassword: process.env.PACT_BROKER_PASSWORD || "pact_workshop",
       providerVersion: "1.0.0",
@@ -50,8 +50,8 @@ describe("Pruebas integración cliente", () => {
     let clienteNormal = {
       provider: "FilmsProvider",
       consumerVersionSelectors: [{ consumer: "FilmsClient", latest: true }],
-      providerBaseUrl: "http://localhost:3000",
-      pactBrokerUrl: process.env.PACT_BROKER_URL || "http://localhost:8000",
+      providerBaseUrl: "http://13.58.151.134:8000",
+      pactBrokerUrl: process.env.PACT_BROKER_URL || "http://13.58.151.134:8000",
       pactBrokerUsername: process.env.PACT_BROKER_USERNAME || "pact_workshop",
       pactBrokerPassword: process.env.PACT_BROKER_PASSWORD || "pact_workshop",
       providerVersion: "1.0.0",
