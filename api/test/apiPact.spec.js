@@ -6,7 +6,7 @@ var path = require("path");
 
 var express = require("express"),
   app = express(),
-  port = process.env.PORT || 3000,
+  port = process.env.PORT || 8000,
   Film = require("../models/filmModel"),
   bodyParser = require("body-parser");
 
@@ -29,7 +29,7 @@ describe("Pact Verification", () => {
     let opts = {
       logLevel: "INFO",
       provider: "FilmsProvider",
-      providerBaseUrl: "http://13.58.151.134:3000",
+      providerBaseUrl: "http://13.58.151.134:8000",
       pactBrokerUrl: process.env.PACT_BROKER_URL || "http://13.58.151.134:8000/",
       pactBrokerUsername: process.env.PACT_BROKER_USERNAME || "pact_workshop",
       pactBrokerPassword: process.env.PACT_BROKER_PASSWORD || "pact_workshop",
